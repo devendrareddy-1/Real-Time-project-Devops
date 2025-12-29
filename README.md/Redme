@@ -1,0 +1,21 @@
+# GCP DevOps CI/CD Project
+
+## Tools Used
+- GCP
+- Jenkins
+- Docker
+- Kubernetes (GKE)
+- Artifact Registry
+- GitHub
+
+## Flow
+1. Developer pushes code to GitHub
+2. Jenkins triggers pipeline
+3. Docker image is built
+4. Image pushed to Artifact Registry
+5. Deployed to GKE using Kubernetes manifests
+6. App exposed via Ingress
+
+## Access
+Get external IP:
+kubectl get ingress
